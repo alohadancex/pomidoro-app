@@ -8,11 +8,40 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Pomidoro app</title>
 	</head>
 	<body>
-		<h1>Pomidoro App</h1>
+		<div class="container">
+			<div class="pomidoro__info">
+				<div class="pomidoro__info-second">
+					<i class="fa-solid fa-circle-check pomidoro__check"></i>
+					<p class="pomidoro__text">Pomofocus</p>
+				</div>
+			</div>
+
+			<div class="pomidoro__block">
+				<div class="pomidoro__block-info">
+					<p class="pomidoro__block-info-text" id="pomodoro">Pomodoro</p>
+					<p class="pomidoro__block-info-text-2" id="short">Short break</p>
+					<p class="pomidoro__block-info-text-3" id="long">Long break</p>
+				</div>
+				<div class="pomidoro__block-major">
+					<p class="pomidoro__block-major-text" id="text"></p>
+				</div>
+				<div class="pomidoro__block-major_button">
+					<button id="button" type="button">START</button>
+				</div>
+			</div>
+			<div class="pomodoro__goals">
+				<span>#1</span>
+				<p>Time to Focus!</p>
+			</div>
+		</div>
 	</body>
 	<script src="script.js"></script>
 </html>

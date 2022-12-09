@@ -13,5 +13,107 @@ html {
 body {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.4;
-	background-color: #f8fafc;
+	background-color: #a40606;
+}
+.container {
+	padding: 0 15px;
+	width: 90%;
+	font-size: 16px;
+	max-width: 43.75em;
+	margin: 1em auto;
+}
+.pomidoro__info {
+	padding-top: 30px;
+}
+
+.pomidoro__check {
+	font-size: 1.4em;
+	color: white;
+}
+
+.pomidoro__info-second {
+	display: flex;
+	align-items: center;
+}
+
+.pomidoro__text {
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+	margin-left: 0.2em;
+}
+
+.pomidoro__block {
+	margin-top: 50px;
+	background-color: #cfc9c873;
+	padding: 1.25em 0.9em;
+	border-radius: 0.3em;
+	box-shadow: 0 0.6em 1.2em rgb(28 0 80 / 6%);
+	text-align: center;
+}
+
+.pomidoro__block-info {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.pomidoro__block-info-text {
+	margin-right: 30px;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.pomidoro__block-info-text-2 {
+	margin-right: 30px;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.pomidoro__block-info-text-3 {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.pomidoro__block-major {
+	margin-top: 30px;
+}
+.pomidoro__block-major-text {
+	color: white;
+	font-size: 8em;
+	font-weight: 600;
+}
+.pomidoro__block-major_button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+button {
+	font-size: 2em;
+	border-radius: 5px;
+	padding: 10px 50px 9px 50px;
+	border: none;
+	color: #a71d31;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.pomodoro__goals {
+	text-align: center;
+	padding-top: 10px;
+}
+
+span {
+	font-size: 20px;
+	font-weight: 500;
+	color: #fbfbfb94;
+}
+
+p {
+	font-size: 1.4em;
+	color: white;
+	font-weight: 400;
 }

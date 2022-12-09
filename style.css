@@ -80,6 +80,8 @@ body {
 
 .pomidoro__block-major {
 	margin-top: 30px;
+	display: flex;
+	justify-content: center;
 }
 .pomidoro__block-major-text {
 	color: white;
@@ -116,4 +118,8 @@ p {
 	font-size: 1.4em;
 	color: white;
 	font-weight: 400;
+}
+
+.stop {
+	display: none;
 }

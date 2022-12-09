@@ -31,10 +31,13 @@
 					<p class="pomidoro__block-info-text-3" id="long">Long break</p>
 				</div>
 				<div class="pomidoro__block-major">
-					<p class="pomidoro__block-major-text" id="text"></p>
+					<p class="pomidoro__block-major-text minute" id="minute"></p>
+					<p class="pomidoro__block-major-text">:</p>
+					<p class="pomidoro__block-major-text second" id="second"></p>
 				</div>
 				<div class="pomidoro__block-major_button">
-					<button id="button" type="button">START</button>
+					<button id="start" type="button" onclick="start()">START</button>
+					<button class="stop" id="stop" onclick="stopInterval()">STOP</button>
 				</div>
 			</div>
 			<div class="pomodoro__goals">

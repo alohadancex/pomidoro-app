@@ -16,35 +16,52 @@
 		<title>Pomidoro app</title>
 	</head>
 	<body>
-		<div class="container">
-			<div class="pomidoro__info">
-				<div class="pomidoro__info-second">
-					<i class="fa-solid fa-circle-check pomidoro__check"></i>
-					<p class="pomidoro__text">Pomofocus</p>
-				</div>
-			</div>
-
-			<div class="pomidoro__block">
-				<div class="pomidoro__block-info">
-					<p class="pomidoro__block-info-text" id="pomodoro">Pomodoro</p>
-					<p class="pomidoro__block-info-text-2" id="short">Short break</p>
-					<p class="pomidoro__block-info-text-3" id="long">Long break</p>
-				</div>
-				<div class="pomidoro__block-major">
-					<p class="pomidoro__block-major-text minute" id="minute"></p>
-					<p class="pomidoro__block-major-text">:</p>
-					<p class="pomidoro__block-major-text second" id="second"></p>
-				</div>
-				<div class="pomidoro__block-major_button">
-					<button id="start" type="button" onclick="start()">START</button>
-					<button class="stop" id="stop" onclick="stopInterval()">STOP</button>
-				</div>
-			</div>
-			<div class="pomodoro__goals">
-				<span>#1</span>
-				<p>Time to Focus!</p>
+	<div class="container">
+			<progress id="js-progress" value="0"></progress>
+		<div class="progress-bar"></div>
+		<div class="pomidoro__info">
+			<div class="pomidoro__info-second">
+				<i class="fa-solid fa-circle-check pomidoro__check"></i>
+				<p class="pomidoro__text">Pomofocus</p>
 			</div>
 		</div>
+		<div class="timer">
+			<div class="button-group mode-buttons" id="js-mode-buttons">
+				<button
+					data-mode="pomodoro"
+					class="button active mode-button"
+					id="js-pomodoro"
+				>
+					Pomodoro
+				</button>
+				<button
+					data-mode="shortBreak"
+					class="button mode-button"
+					id="js-short-break"
+				>
+					Short break
+				</button>
+				<button
+					data-mode="longBreak"
+					class="button mode-button"
+					id="js-long-break"
+				>
+					Long break
+				</button>
+			</div>
+			<div class="clock" id="js-clock">
+				<span id="js-minutes">25</span>
+				<span class="separator">:</span>
+				<span id="js-seconds">00</span>
+			</div>
+			<button class="main-button" data-action="start" id="js-btn">Start</button>
+			</div>
+			<div>
+				<div class="pomodoro__goals">
+			<span>#1</span>
+			<p>Time to Focus!</p>
+		</div>
+			</div>
 	</body>
 	<script src="script.js"></script>
 </html>

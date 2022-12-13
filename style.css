@@ -80,12 +80,12 @@ progress::-webkit-progress-value {
 .clock {
 	margin-top: 50px;
 	margin-bottom: 30px;
-	font-size: 15rem;
+	font-size: 12rem;
 	line-height: 1;
 	display: flex;
-	align-items: center;
+	justify-content: center;
 	font-weight: 500;
-	color: #dfdfdf;
+	color: #f3ebeb;
 }
 
 .mode-button {
@@ -103,7 +103,8 @@ progress::-webkit-progress-value {
 }
 
 .mode-button.active {
-	color: rgba(255, 255, 255, 0.782);
+	color: rgba(255, 255, 255, 0.879);
+	transition: 0.2s ease-in-out color;
 }
 
 .main-button {
